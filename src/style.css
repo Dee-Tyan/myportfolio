@@ -13,7 +13,6 @@
     
     --clr-light: #fff;
     --clr-dark: #070707;
-    --clr-accent: #ED254E;
     --clr-fav: #FFD400;
     --clr-nextfav: #E2C044;
 
@@ -23,7 +22,7 @@
     --fs-body: 1rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 400px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -221,7 +220,7 @@ header {
 .hamburger::after { bottom: 6px; }
 
 
-@media (min-width: 600px) {
+@media (min-width: 400px) {
     .intro {
         display: grid;
         width: min-content;
@@ -268,7 +267,7 @@ header {
       .imgbox a {
         padding-left: 20px;
       }
-    @media (min-width: 600px) {
+    @media (min-width: 400px) {
         .about-me {
             display: grid;
             grid-template-columns: 1fr 400px;
@@ -295,7 +294,7 @@ header {
         
         .about-me__img {
             grid-area: img;
-            width: 100px;
+            width: 50px;
             position: relative;
             z-index: 2;
         }
@@ -340,13 +339,26 @@ header {
                 opacity: .7;
             }
         
-            @media (min-width: 800px) {
+            @media (min-width: 400px) {
                 .services {
                     display: -moz-inline-grid;
                     max-width: 1000px;
                     margin: 0 auto;
+
                 }
                 
+                .service {
+                    margin-bottom: 20px;
+                    border: 1px solid #070707;
+                    border-radius: 20px;
+                }
+
+                .about-me__img {
+                    grid-area: img;
+                    width: 20px;
+                    position: relative;
+                }
+
             }
     
     /* My Work */
@@ -469,6 +481,8 @@ footer h2 {
 .credits span {
    background-color: var(--clr-fav);
    border-radius: 3%;
+   color: var(--clr-dark);
+   font-weight: var(--fw-bold);
    padding: 2px;
 }
 
