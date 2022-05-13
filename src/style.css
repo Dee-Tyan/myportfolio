@@ -22,7 +22,7 @@
     --fs-body: 1rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 800px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -220,7 +220,7 @@ header {
 .hamburger::after { bottom: 6px; }
 
 
-@media (min-width: 400px) {
+@media (min-width: 800px) {
     .intro {
         display: grid;
         width: min-content;
@@ -267,7 +267,7 @@ header {
       .imgbox a {
         padding-left: 20px;
       }
-    @media (min-width: 400px) {
+    @media (min-width: 800px) {
         .about-me {
             display: grid;
             grid-template-columns: 1fr 400px;
