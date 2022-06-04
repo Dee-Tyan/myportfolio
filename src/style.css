@@ -159,14 +159,21 @@ header {
 }
 
 .nav-toggle {
-    padding: .5em;
+    /* padding: .5em;
     background: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
     right: 1em;
     top: 1em;
-    z-index: 1000;
+    z-index: 1000; */
+display: inline-block;
+width: 1.5em;
+height: 1.5em;
+vertical-align: middle;
+background-repeat: no-repeat;
+background-position: center;
+background-size: 100%;
 }
 
 .nav-open .nav {
@@ -193,8 +200,9 @@ header {
 }
 
 .hamburger {
-    display: block;
-    position: relative;
+    /* display: block;
+    position: relative; */
+    background-image: url("data:image/svg+xml,%3csvg…%3c/svg%3e");
 }
 
 .hamburger,
@@ -339,7 +347,7 @@ header {
                 opacity: .7;
             }
         
-            @media (min-width: 400px) {
+            @media (min-width: 800px) {
                 .services {
                     display: -moz-inline-grid;
                     max-width: 1000px;
